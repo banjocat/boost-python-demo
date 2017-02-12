@@ -1,3 +1,7 @@
 import spam
 
-print(spam.greet())
+spam.greet('cassie')
+
+spam.system('ls')
+
+print spam.strlen("1234")
