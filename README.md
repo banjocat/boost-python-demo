@@ -1,5 +1,5 @@
 # Example boost python
 
 #### Requirements
-* Boost
+* Boost (python only needed)
 * Python libs
