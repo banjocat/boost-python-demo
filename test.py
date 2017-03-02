@@ -33,7 +33,7 @@ def python_fb(num):
     return result
 
 @timeme
-def fib():
+def cppfib():
     [x for x in spam.fibonacci(100000)]
 
 @timeme
@@ -42,6 +42,6 @@ def pyfib():
 
 
 
-fib()
+cppfib()
 pyfib()
 
