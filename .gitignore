@@ -2,3 +2,6 @@ build
 dist
 *.egg-info
 tags
+*.so
+.idea
+
