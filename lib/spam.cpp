@@ -51,17 +51,18 @@ int_vector fibonacci(int num)
     return result;
 }
 
-dict create_a_dict()
+void create_a_dict()
 {
-    dict x;
-    x["message"] = "Hello World";
-    list l;
-    l.append("This");
-    l.append("is");
-    l.append("a");
-    l.append("list");
-    x["list"] = l;
-    return x;
+    for (int i = 0; i < 10000000; i++) {
+        dict x;
+        x["message"] = "Hello World";
+        list l;
+        l.append("This");
+        l.append("is");
+        l.append("a");
+        l.append("list");
+        x["list"] = l;
+    }
 }
 
 dict change_a_dict(dict val) {
