@@ -40,8 +40,27 @@ def cppfib():
 def pyfib():
     [x for x in python_fb(100000)]
 
+@timeme
+def boost_dict():
+    for i in xrange(1,10000000):
+        spam.create_a_dict()
 
+@timeme
+def python_dict():
+    for i in xrange(1,10000000):
+        _python_dict()
 
-cppfib()
-pyfib()
+def _python_dict():
+    x = {}
+    x["message"] = "Hello World"
+    l = []
+    l.append('This')
+    l.append('is')
+    l.append('a')
+    l.append('list')
+    x['list'] = l;
+    return x
+
+boost_dict()
+python_dict()
 
